@@ -17,5 +17,5 @@
 
 ## 📬ช่องทางการติดต่อ (Contact Information)
 - **Email:** [kanisom1410@gmail.com]
-- **LinkedIn:** [linkedin.com/in/username](URL)
+- **LinkedIn:** [Kanthida Aijai](https://www.linkedin.com/in/kanthida-aijai-1a6a53429/)
 - **Portfolio Website:** [URL]
