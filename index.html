@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - นางสาวมีนา มีใจกานต์ธิดา อ้ายใจ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">นางสาวกานต์ธิดา อ้ายใจ</a>
+            <nav class="nav">
+                <a href="#about">เกี่ยวกับฉัน</a>
+                <a href="#skills">ทักษะ</a>
+                <a href="#projects">โปรเจกต์</a>
+                <a href="#contact">ติดต่อ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- About Me Section -->
+        <section id="about" class="section about-section">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="badge">UX/UI & Digital Business</span>
+                    <h1>สวัสดีค่ะ, ฉันชื่อ<br><span class="highlight-text">นางสาวกานต์ธิดา อ้ายใจ</span></h1>
+                    <p class="description">
+                        นักศึกษาชั้นปีที่ 4 สาขานวัตกรรมธุรกิจดิจิทัล คณะบริหารธุรกิจ เคยออกแบบ UX/UI แอปพลิเคชัน IFitUp ในโปรเจกต์กลุ่ม โดยรับผิดชอบหน้า Login และ Create Account ตอนนี้อยากเรียนรู้การทำงานกับทีมจริงและการนำแอปพลิเคชันขึ้นใช้งานค่ะ
+                    </p>
+                    <div class="cta-group">
+                        <a href="#contact" class="btn btn-primary">ติดต่อฉัน</a>
+                        <a href="#projects" class="btn btn-outline">ดูผลงาน</a>
+                    </div>
+                </div>
+                <div class="about-image-container">
+                    <img src="image1.jpg" alt="รูปโปรไฟล์ นางสาวกานต์ธิดา อ้ายใจ" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-title">
+                <h2>🛠 ทักษะและความเชี่ยวชาญ</h2>
+                <p>Technical Skills & Capabilities</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="card skill-card">
+                    <div class="card-icon">💻</div>
+                    <h3>Languages</h3>
+                    <ul class="tag-list">
+                        <li class="tag">Python</li>
+                        <li class="tag">HTML/CSS</li>
+                        <li class="tag">PHP</li>
+                    </ul>
+                </div>
+
+                <!-- Frameworks & Libraries -->
+                <div class="card skill-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Frameworks & Libraries</h3>
+                    <ul class="tag-list">
+                        <li class="tag">Node.js</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="card skill-card">
+                    <div class="card-icon">🛠️</div>
+                    <h3>Tools & Platforms</h3>
+                    <ul class="tag-list">
+                        <li class="tag">Git</li>
+                        <li class="tag">GitHub</li>
+                        <li class="tag">VS Code</li>
+                        <li class="tag">Figma</li>
+                    </ul>
+                </div>
+
+                <!-- Databases -->
+                <div class="card skill-card">
+                    <div class="card-icon">🗄️</div>
+                    <h3>Databases</h3>
+                    <ul class="tag-list">
+                        <li class="tag">MySQL</li>
+                        <li class="tag">PostgreSQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-title">
+                <h2>📌 โปรเจกต์ที่โดดเด่น</h2>
+                <p>Featured Projects</p>
+            </div>
+
+            <div class="project-card card">
+                <div class="project-content">
+                    <span class="project-tag">UX/UI Design</span>
+                    <h3>ออกแบบ UX/UI แอปพลิเคชัน IFitUp สำหรับการลดน้ำหนักแบบ IF</h3>
+                    <p class="project-desc">
+                        ออกแบบในส่วนหน้า Login กับ Create Account โดยเน้นการใช้งานที่ง่าย สะดวก และตอบโจทย์ผู้ใช้งานที่ต้องการดูแลสุขภาพและการลดน้ำหนักแบบ IF
+                    </p>
+                    <div class="project-tech">
+                        <strong>เทคโนโลยีหลักที่ใช้:</strong>
+                        <span class="tag tag-accent">Figma</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Kanthida-Aijai/Portfolio" target="_blank" class="btn btn-primary btn-sm">ดูโปรเจกต์บน GitHub</a>
+                    </div>
+                </div>
+                <div class="project-image-container">
+                    <img src="image2.jpg" alt="รูปโปรเจกต์ IFitUp" class="project-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-title">
+                <h2>📬 ช่องทางการติดต่อ</h2>
+                <p>Contact Information</p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="mailto:kanisom1410@gmail.com" class="card contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <div class="contact-label">Email</div>
+                        <div class="contact-val">kanisom1410@gmail.com</div>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/kanthida-aijai-1a6a53429/" target="_blank" class="card contact-card">
+                    <div class="contact-icon">💼</div>
+                    <div>
+                        <div class="contact-label">LinkedIn</div>
+                        <div class="contact-val">linkedin.com/in/kanthida-aijai-1a6a53429</div>
+                    </div>
+                </a>
+
+                <a href="#" class="card contact-card">
+                    <div class="contact-icon">🌐</div>
+                    <div>
+                        <div class="contact-label">Portfolio Website</div>
+                        <div class="contact-val">Visit Website</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>© 2026 นางสาวมีนา มีใจ. All rights reserved.</p>
+            <p>Designed with Clean & Usable Modern Minimal style.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
