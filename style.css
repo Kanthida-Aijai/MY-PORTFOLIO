@@ -1,1 +1,389 @@
+/* CSS - Rule 60-30-10 Balanced Palette */
+/* 
+   60% Background: White / Soft Grey (#ffffff, #f8f9fa)
+   30% Text & Structure: Dark Slate Grey (#1e293b, #334155, #f1f5f9)
+   10% Accent Brand Color: Vibrant Clean Blue (#2563eb, #1d4ed8)
+*/
+
+:root {
+    --bg-60: #ffffff;
+    --bg-subtle-60: #f8fafc;
+    --text-30: #0f172a;
+    --text-muted-30: #475569;
+    --card-border-30: #e2e8f0;
+    --card-bg-30: #ffffff;
+    --accent-10: #2563eb;
+    --accent-hover-10: #1d4ed8;
+    --accent-light-10: #eff6ff;
+    --radius: 12px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --shadow-hover: 0 10px 15px -3px rgba(37, 99, 235, 0.1), 0 4px 6px -2px rgba(37, 99, 235, 0.05);
+    --transition: all 0.25s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--bg-subtle-60);
+    color: var(--text-30);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--card-border-30);
+    z-index: 100;
+}
+
+.header-container {
+    display: table;
+    width: 100%;
+    padding: 16px 24px;
+}
+
+.logo {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-30);
+    text-decoration: none;
+}
+
+.nav {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text-muted-30);
+    font-weight: 400;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.nav a:hover {
+    color: var(--accent-10);
+}
+
+/* Sections */
+.section {
+    padding: 64px 0;
+}
+
+.section-title {
+    margin-bottom: 32px;
+}
+
+.section-title h2 {
+    font-size: 1.75rem;
+    color: var(--text-30);
+    font-weight: 600;
+}
+
+.section-title p {
+    color: var(--text-muted-30);
+    font-size: 0.9rem;
+}
+
+/* About Section */
+.about-grid {
+    display: table;
+    width: 100%;
+    background-color: var(--bg-60);
+    border-radius: var(--radius);
+    padding: 40px;
+    border: 1px solid var(--card-border-30);
+    box-shadow: var(--shadow);
+}
+
+.about-text {
+    display: table-cell;
+    vertical-align: middle;
+    width: 60%;
+    padding-right: 32px;
+}
+
+.about-image-container {
+    display: table-cell;
+    vertical-align: middle;
+    width: 40%;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--accent-light-10);
+    color: var(--accent-10);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.about-text h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.highlight-text {
+    color: var(--accent-10);
+}
+
+.description {
+    color: var(--text-muted-30);
+    font-size: 1rem;
+    margin-bottom: 24px;
+}
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--accent-light-10);
+    box-shadow: var(--shadow);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background-color: var(--accent-10);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover-10);
+}
+
+.btn-outline {
+    border: 1px solid var(--card-border-30);
+    color: var(--text-30);
+    margin-left: 10px;
+}
+
+.btn-outline:hover {
+    background-color: var(--bg-subtle-60);
+}
+
+.btn-sm {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+}
+
+/* Cards & Skills */
+.card {
+    background-color: var(--card-bg-30);
+    border: 1px solid var(--card-border-30);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-hover);
+    border-color: var(--accent-10);
+}
+
+.skills-grid {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 16px;
+    margin: -16px;
+}
+
+.skill-card {
+    display: table-cell;
+    vertical-align: top;
+    background-color: var(--card-bg-30);
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.skill-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: var(--text-30);
+}
+
+.tag-list {
+    list-style: none;
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--bg-subtle-60);
+    color: var(--text-muted-30);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    margin: 3px 2px;
+    border: 1px solid var(--card-border-30);
+}
+
+.tag-accent {
+    background-color: var(--accent-light-10);
+    color: var(--accent-10);
+    border-color: transparent;
+    font-weight: 500;
+}
+
+/* Project Section */
+.project-card {
+    display: table;
+    width: 100%;
+}
+
+.project-content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 60%;
+    padding-right: 24px;
+}
+
+.project-image-container {
+    display: table-cell;
+    vertical-align: middle;
+    width: 40%;
+}
+
+.project-tag {
+    color: var(--accent-10);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    margin: 8px 0 12px 0;
+}
+
+.project-desc {
+    color: var(--text-muted-30);
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+
+.project-tech {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: var(--text-muted-30);
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--card-border-30);
+    object-fit: cover;
+}
+
+/* Contact Section */
+.contact-grid {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 16px;
+    margin: -16px;
+}
+
+.contact-card {
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    color: var(--text-30);
+}
+
+.contact-icon {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.8rem;
+    padding-right: 16px;
+    width: 40px;
+}
+
+.contact-label {
+    font-size: 0.8rem;
+    color: var(--text-muted-30);
+}
+
+.contact-val {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-30);
+    word-break: break-all;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--bg-60);
+    border-top: 1px solid var(--card-border-30);
+    padding: 32px 0;
+    text-align: center;
+    color: var(--text-muted-30);
+    font-size: 0.875rem;
+    margin-top: 64px;
+}
+
+/* Responsive basics */
+@media (max-width: 768px) {
+    .about-text, .about-image-container,
+    .project-content, .project-image-container,
+    .skill-card, .contact-card {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .about-text {
+        margin-bottom: 24px;
+    }
+    .skills-grid, .contact-grid {
+        display: block;
+        border-spacing: 0;
+        margin: 0;
+    }
+    .skill-card, .contact-card {
+        margin-bottom: 16px;
+    }
+}
 
